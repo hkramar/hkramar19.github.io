@@ -25,6 +25,12 @@
            border:8px outset yellow;
 }
 
+@media screen and (max-width: 700px) {
+    .background{
+      font-size:20px;
+      margin-right: 0%; 
+     }
+ }
 .heading1{
        text-align: center;
       font-size: 150px;
@@ -40,7 +46,8 @@
       cursor: pointer;
       transition: .5s;
       position: absolute;
-}
+    }
+    
 
 
 .images{ width: 100%;
