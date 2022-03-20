@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <link rel="Stylesheet" type="Text/css" href="Style.css">
+<head>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="Stylesheet" type="Text/css" href="Style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Meghalaya</title>
 </head>
@@ -10,7 +12,7 @@
      <h1><marquee> Art Integrated Project    </h1></marquee> 
      </div>
      <div class="heading1">
-   <h1>Meghalaya </h1> 
+   <h1> <a href="#metadata"> Meghalaya </h1> </a>
    </div>
      <div class="box">
              <img src="meghalay.webp">
@@ -22,7 +24,48 @@
             <img src="meghalay2.jpeg">
          </div>
 
-     </section>
+<div id="sidenav">
+<nav>
+<ol>             <li> <a href="#banner">Home </a></li>
+                 <li> <a href="#metadata"> Festival of Colour </a></li>
+                 <li> <a href="#Explaination"> Section2 </a></li>
+                 <li> <a href="#explaination1"> Section3 </a></li>
+                 <li> <a href="#explaination3"> Section4</a></li>
+                 <li> <a href="#waterfallsofmeghalaya"> Section15 </a></li>
+                 <li> <a href="#"> Section6 </a></li>
+                 <li> <a href="#">Section7 </a></li>
+          
+</ol>
+</nav>
+</div>
+          
+<div id="menubtn" id="menu">
+<img src="sidenav.png"></img> 
+</div>
+
+</section>
+<script>
+      var menubtn = document.getElementById("menubtn");
+      var sidenav = document.getElementById("sidenav");
+      var menu = document.getElementById("menu");
+      
+      sidenav.style.right = "-280px";
+      
+      
+      menubtn.onclick = function() {
+        if(sidenav.style.right =="-280px") {
+          sidenav.style.right = "0"; 
+          
+        }
+          else{ 
+            sidenav.style.right = "-280px";
+            
+          }
+      }
+      var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 600
+});     
+</script> 
 
 <section id="metadata">
     <div class="paragraph">
@@ -43,9 +86,9 @@ The People of Meghalaya are Known for their cherful nature and adaptability.
 
 <div class="List">
 <p> 
-       <a href="b"> 1.Shad Suk Mynsiem Festival<br></a>
-       <a href="hfdhg">   2.Nongkrem Festival<br></a>
-       <a href="hhtht">  3.Behdeinkhlam Festival</p> </a>
+       <a href="#Explaination"><b> 1.Shad Suk Mynsiem Festival<br></a>
+       <a href="#explaination1">   2.Nongkrem Festival<br></a>
+       <a href="#explaination3">  3.Behdeinkhlam Festival</p> </a></b>
 </div>
 </section> 
 
@@ -92,18 +135,52 @@ The People of Meghalaya are Known for their cherful nature and adaptability.
         <img src="Nongkrem.jpg" />
         
 </div>
+</section> 
+<section id="explaination3" > 
+    <div class="three">
+                <h1> 3.Behdeinkhlam Festival</h1>
+                <p> Explaination </p>
+      </div>
+    <div class="explain1">
+    <p> Behdeinkhlam Festiva is the most celebrated culture festival among the pnars. Behdeinkhlam (Chasing away 
+        the demon of cholera) is celebrated annually in july after the sowing. Period, the most important 
+         dance festival of the Jaintia tribes. The festival tour is also an invocation to god, seeking his 
+        blessing for a bumper harvest. Where: Behdeinkhlam is probably one of the most famous festival in Jowai,Jaintia
+        hills of Meghalaya. What to expect:During the Behdeinkhlam cultural festival tour, Young men make a
+        symbolic gesture of driving away of the evil spirit, Plague and disease by beating of the root of Every
+        house with bamboo poles. The climax of the celebration is the fight for a large undressed beam by two group
+        of people in opposition to each other. When is Behdeinkhlam celebrated: Behdeinkhlam is celebrated 
+        annually in july after the sowing period. Behdeinkhlam 2021 dates: 11 July 2021.</p> </div>
+
+        <div class="festival3">
+      <img src="Behdeinkhlam Festival.jpg"> </img>  
 
 
-
-
-
-
-
-
-
+</div>
 </section> 
 
+<section id="waterfallsofmeghalaya">
+  <div class="Topic1">
 
+    <h1> </h1> <b>Waterfalls of Meghalaya </div> </b>
+  
+  <div class="List1">
+    <p> 
+      <a href="b"><b> 1.Nohkalika Fall<br></a>
+      <a href="hfdhg">   2.Elephant Fall<br></a>
+      <a href="hhtht">  3.Rainbow Fall</p> </a></b>
+</div></section>
+<Section id="ExplainationA">
+<div class="one1">
+      <h1> 1.Nohkalika Fall</h1>
+     
+    <p>  Explaination </p>  
+   </div>
+
+
+
+  </div>
+</section>
 
 </body>
 </html>
